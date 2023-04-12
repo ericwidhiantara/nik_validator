@@ -50,7 +50,7 @@ class NIKValidator {
 
   ///Get city id in NIK
   String? _getCityId(String nik, Map<String, dynamic> location) =>
-      nik.substring(0, 4);
+      nik.substring(2, 4);
 
   ///Get subdisctrict in NIK
   String? _getSubdistrict(String nik, Map<String, dynamic> location) =>
@@ -59,7 +59,7 @@ class NIKValidator {
 
   ///Get subdisctrict id in NIK
   String? _getSubdistrictId(String nik, Map<String, dynamic> location) =>
-      nik.substring(0, 6);
+      nik.substring(4, 6);
 
   ///Get NIK Gender
   String _getGender(int date) => date > 40 ? "PEREMPUAN" : "LAKI-LAKI";
